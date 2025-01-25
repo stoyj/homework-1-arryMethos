@@ -1,0 +1,289 @@
+1. Create a Non-Stop Road Trip Playlist
+Task: Write a function to extract a subset of songs that comes closest to exactly 15 minutes without exceeding it.
+
+Function Signature:
+
+function roadTripPlaylist(playlist, maxDuration) {
+  // Your code here
+}
+Example Input:
+
+const playlist = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+];
+
+roadTripPlaylist(playlist, 15);
+Example Output:
+
+["Song A", "Song B", "Song D"] // Total: 14.5 minutes
+
+
+2. Find the Perfect Short-and-Sweet Pair
+Task: Write a function to find two songs whose combined duration is closest to 5 minutes.
+
+Function Signature:
+
+
+function findClosestPair(playlist, targetDuration) {
+  // Your code here
+}
+Example Input:
+
+const playlist = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+];
+
+findClosestPair(playlist, 5);
+Example Output:
+
+{
+  pair: ["Song D", "Song A"],
+  totalDuration: 6.3
+}
+
+
+3. Group Songs by Duration
+Task: Write a function to group songs into categories:
+
+Short: Less than 3 minutes
+Medium: 3 to 5 minutes
+Long: More than 5 minutes
+Function Signature:
+
+
+function groupSongsByDuration(playlist) {
+  // Your code here
+}
+Example Input:
+
+const playlist = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+];
+
+groupSongsByDuration(playlist);
+Example Output:
+
+{
+  short: ["Song D"],
+  medium: ["Song A", "Song B"],
+  long: ["Song C"]
+}
+
+
+4. Create a DJ Playlist with Transitions
+Task: Write a function to append " - Transition" to the title of every song except the last one.
+
+Function Signature:
+
+function addTransitions(playlist) {
+  // Your code here
+}
+Example Input:
+
+const playlist = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+];
+
+addTransitions(playlist);
+Example Output:
+
+[
+  { title: "Song A - Transition", duration: 3.5 },
+  { title: "Song B - Transition", duration: 4.2 },
+  { title: "Song C - Transition", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+]
+
+5. Calculate the Weighted Average Duration
+Task: Use the popularity scores to calculate the weighted average duration of songs in the playlist.
+
+Function Signature:
+
+function weightedAverageDuration(playlist, popularity) {
+  // Your code here
+}
+Example Input:
+
+const playlist = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+];
+
+weightedSum = duration * popularity
+[90, 70, 80, 60] = totalWeight
+weightedSum / totalWeight
+const popularity = [90, 70, 80, 60]; // Corresponds to each song
+weightedAverageDuration(playlist, popularity);
+Example Output:
+
+4.07 // Weighted average duration
+
+
+6. Remove Overplayed Songs
+Task: Write a function to remove songs longer than 5 minutes and sort the remaining playlist by duration.
+
+Function Signature:
+
+function removeOverplayed(playlist, maxDuration) {
+  // Your code here
+}
+Example Input:
+
+
+const playlist = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+];
+
+removeOverplayed(playlist, 5);
+Example Output:
+
+[
+  { title: "Song D", duration: 2.8 },
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 }
+]
+
+
+7. Create a Perfect Loop Playlist
+Task: Write a function to add the first song as the last song with " (Reprise)" added to its title.
+
+Function Signature:
+
+function createLoopPlaylist(playlist) {
+  // Your code here
+}
+
+Example Input:
+
+
+const playlist = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+];
+
+createLoopPlaylist(playlist);
+Example Output:
+
+
+[
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 },
+  { title: "Song A (Reprise)", duration: 3.5 }
+]
+
+
+8. Build a Collaborative Playlist with Unique Songs
+Task: Merge two playlists and remove duplicates based on song titles.
+
+Function Signature:
+
+function mergePlaylists(playlist1, playlist2) {
+  // Your code here
+}
+
+Example Input:
+
+
+const playlist1 = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 }
+];
+
+const playlist2 = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+];
+
+mergePlaylists(playlist1, playlist2);
+Example Output:
+
+
+[
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+]
+
+
+9. Analyze Playlist Duration Trends
+Task: Write a function to identify if the playlist durations are increasing, decreasing, or random.
+
+Function Signature:
+
+
+function analyzeTrend(playlist) {
+  // Your code here
+}
+
+Example Input:
+
+
+const playlist = [
+  { title: "Song D", duration: 2.8 },
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 }
+];
+
+analyzeTrend(playlist);
+Example Output:
+
+
+
+
+"Increasing"
+10. Generate a Karaoke-Ready Playlist
+Task: Add two new properties to each song:
+
+lyricsReady: true if the duration is more than 4 minutes, otherwise false.
+karaokeKey: A randomly generated 6-character string.
+Function Signature:
+
+
+function generateKaraokePlaylist(playlist) {
+  // Your code here
+}
+
+Example Input:
+
+
+const playlist = [
+  { title: "Song A", duration: 3.5 },
+  { title: "Song B", duration: 4.2 },
+  { title: "Song C", duration: 5.1 },
+  { title: "Song D", duration: 2.8 }
+];
+
+generateKaraokePlaylist(playlist);
+Example Output:
+
+
+[
+  { title: "Song A", duration: 3.5, lyricsReady: false, karaokeKey: "abc123" },
+  { title: "Song B", duration: 4.2, lyricsReady: true, karaokeKey: "xyz456" },
+  { title: "Song C", duration: 5.1, lyricsReady: true, karaokeKey: "lmn789" },
+  { title: "Song D", duration: 2.8, lyricsReady: false, karaokeKey: "qwe321" }
+]
