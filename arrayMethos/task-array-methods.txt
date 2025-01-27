@@ -287,3 +287,7 @@ Example Output:
   { title: "Song C", duration: 5.1, lyricsReady: true, karaokeKey: "lmn789" },
   { title: "Song D", duration: 2.8, lyricsReady: false, karaokeKey: "qwe321" }
 ]
+
+
+// Дай ми да разбера кода и да реша стъпка по стъпка и по-прост да е кода
+Дай ми да направя и разбера и реша задачата  на части по прост начин 
